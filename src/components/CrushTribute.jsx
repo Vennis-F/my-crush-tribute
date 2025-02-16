@@ -4,8 +4,9 @@ import "./styles.css";
 
 const pages = [
   {
-    title: "9 Điều Dành Cho Đan Tâm",
-    content: "",
+    title: "9 Điều Về Đan Tâm",
+    content:
+      "Đây là cuốn sách nhỏ về những điều mình nghĩ về Đan Tâm. Hãy nhấn vào góc phải màn hình để lật sang trang tiếp theo nhé!",
     image: "cover.webp",
     sound: "cover.mp3",
     isCover: true,
@@ -46,6 +47,41 @@ const pages = [
     sound: "sound5.mp3",
   },
   {
+    title: "Đan Tâm và những giấc mơ",
+    content:
+      "Dù là những ước mơ nhỏ bé hay những hoài bão lớn lao, Đan Tâm luôn cố gắng từng bước để đạt được chúng. Cô ấy không chỉ mơ ước mà còn nỗ lực biến nó thành hiện thực.",
+    image: "image10.jpg",
+    sound: "sound10.mp3",
+  },
+  {
+    title: "Đan Tâm và những điều nhỏ bé",
+    content:
+      "Đan Tâm không chỉ trân trọng những điều lớn lao, mà còn tìm thấy hạnh phúc trong những điều giản dị. Một buổi hoàng hôn đẹp, một tách trà thơm, hay chỉ là một câu chuyện nhỏ với người cô ấy thương.",
+    image: "image11.jpg",
+    sound: "sound11.mp3",
+  },
+  {
+    title: "Khi Đan Tâm tức giận",
+    content:
+      "Có một Đan Tâm nghiêm túc, mạnh mẽ và cũng có một Đan Tâm khi tức giận 😠. Nhưng ngay cả khi giận dữ, cô ấy vẫn rất đáng yêu theo cách riêng của mình.",
+    image: "image12.jpg",
+    sound: "sound12.mp3",
+  },
+  {
+    title: "Đan Tâm và những lúc trầm lặng",
+    content:
+      "Dù có mạnh mẽ thế nào, cũng sẽ có những lúc Đan Tâm trầm lặng, suy tư về cuộc sống. Nhưng đó cũng chính là lúc cô ấy đẹp nhất – một vẻ đẹp sâu sắc, đầy cảm xúc",
+    image: "image13.jpg",
+    sound: "sound12.mp3",
+  },
+  {
+    title: "Khi Đan Tâm động viên người khác",
+    content:
+      "Đan Tâm không phải kiểu người nói nhiều lời hoa mỹ, nhưng mỗi khi ai đó cần một động lực, cô ấy luôn có cách giúp họ cảm thấy mạnh mẽ hơn. Một lời nói, một ánh mắt, một hành động nhỏ cũng đủ khiến ai đó cảm thấy được tiếp thêm sức mạnh.",
+    image: "image14.jpg",
+    sound: "sound12.mp3",
+  },
+  {
     title: "Đan Tâm cũng cần được yêu thương",
     content:
       "Mạnh mẽ không có nghĩa là phải đi một mình. Ai cũng xứng đáng có một chốn dựa vào, kể cả Đan Tâm.",
@@ -62,14 +98,14 @@ const pages = [
   {
     title: "Cảm ơn vì đã là chính mình",
     content:
-      "Đan Tâm không cần thay đổi để trở thành ai khác. Đan Tâm như bây giờ đã là một điều tuyệt vời rồi.",
+      "Đan Tâm không cần thay đổi để trở thành ai khác. Đan Tâm như bây giờ đã là một điều tuyệt vời rồi. Trên thế giới này, có hàng tỷ người, nhưng chỉ có một Đan Tâm – một người không giống ai, một người không thể thay thế. Cảm ơn vì đã là chính mình.",
     image: "image8.jpg",
     sound: "sound8.mp3",
   },
   {
     title: "Trang cuối mình chỉ muốn chúc Đan Tâm",
     content:
-      "Mong năm nay Đan Tâm sẽ ngày càng trẻ đẹp, trẻ mãi không già, luôn vui vẻ, hạnh phúc và thành công trong công việc nhé. Hãy mãi mãi vừa là người con gái 17 tuổi vừa là 1 người trưởng thành mạnh mẽ kiên định, luôn tiến về phía trước. Fightingg, litte girl",
+      "Mong năm nay Đan Tâm sẽ ngày càng rạng rỡ, trẻ trung và luôn tràn đầy niềm vui. Chúc Đan Tâm mãi hạnh phúc, vững bước trên con đường mình chọn và đạt được mọi thành công mà trái tim mong muốn. Hãy luôn là cô gái mang trong mình hai thế giới: một Đan Tâm 17 tuổi hồn nhiên, tươi tắn như ánh ban mai, và một Đan Tâm trưởng thành, kiên định, mạnh mẽ trước mọi sóng gió. Luôn tiến về phía trước, vì thế giới này cần một Đan Tâm rực rỡ như thế. Mình từng nói rằng đây là '9 điều về Đan Tâm', nhưng thực ra... có lẽ 9 điều là quá ít để nói về một cô gái đặc biệt như Đan Tâm. Có những điều không thể viết thành lời, chỉ có thể cảm nhận bằng trái tim. Fighting, my little girl! 🌙✨",
     image: "image9.jpg",
     sound: "sound9.mp3",
   },
@@ -100,14 +136,8 @@ export default function CrushTribute() {
             <div className="image-container">
               <img src={page.image} alt={page.title} className="page-image" />
             </div>
-            {page.isCover ? (
-              <h1 className="title">{page.title}</h1>
-            ) : (
-              <>
-                <h1 className="title">{page.title}</h1>
-                <p className="content">{page.content}</p>
-              </>
-            )}
+            <h1 className="title">{page.title}</h1>
+            <p className="content">{page.content}</p>
           </div>
         ))}
       </HTMLFlipBook>
