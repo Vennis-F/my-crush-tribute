@@ -111,36 +111,72 @@ const pages = [
   },
 ];
 
+const PASSWORD = "29280906";
+
 export default function CrushTribute() {
-  const [currentPage, setCurrentPage] = useState(0);
+  const [isUnlocked, setIsUnlocked] = useState(false);
+  const [inputPassword, setInputPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const audioRef = useRef(null);
 
-  const handleFlip = (e) => {
-    setCurrentPage(e.data);
-    if (e.data === 1 && audioRef.current) {
-      audioRef.current.play();
+  // const handleFlip = (e) => {
+  //   setCurrentPage(e.data);
+  //   if (e.data === 1 && audioRef.current) {
+  //     audioRef.current.play();
+  //   }
+  // };
+
+  const handleUnlock = () => {
+    if (inputPassword === PASSWORD) {
+      setIsUnlocked(true);
+      if (audioRef.current) {
+        audioRef.current.play(); // Tự động phát nhạc khi mở khóa
+      }
+    } else {
+      setErrorMessage(
+        "Ồ, bạn đã nhập sai mật khẩu rồi! Bạn có thể tự đoán mò hoặc vào link này để chơi trò chơi và nhận mật khẩu: [Link trò chơi]"
+      );
     }
   };
 
   return (
     <div className="book-container">
       <audio ref={audioRef} src="background-music.mp3" loop />
-      <HTMLFlipBook
-        width={window.innerWidth < 768 ? 300 : 500}
-        height={window.innerWidth < 768 ? 450 : 700}
-        className="react-pageflip"
-        onFlip={handleFlip}
-      >
-        {pages.map((page, index) => (
-          <div key={index} className="page">
-            <div className="image-container">
-              <img src={page.image} alt={page.title} className="page-image" />
+      {!isUnlocked ? (
+        <div className="password-container">
+          <h2 className="password-title">
+            🔒 Nhập mật khẩu để mở khóa cuốn sách
+          </h2>
+          <input
+            type="password"
+            value={inputPassword}
+            onChange={(e) => setInputPassword(e.target.value)}
+            placeholder="Nhập mật khẩu..."
+            className="password-input"
+          />
+          <button className="password-button" onClick={handleUnlock}>
+            Mở khóa
+          </button>
+          {errorMessage && <p className="error-message">{errorMessage}</p>}
+        </div>
+      ) : (
+        <HTMLFlipBook
+          width={window.innerWidth < 768 ? 300 : 500}
+          height={window.innerWidth < 768 ? 450 : 700}
+          className="react-pageflip"
+          // onFlip={handleFlip}
+        >
+          {pages.map((page, index) => (
+            <div key={index} className="page">
+              <div className="image-container">
+                <img src={page.image} alt={page.title} className="page-image" />
+              </div>
+              <h1 className="title">{page.title}</h1>
+              <p className="content">{page.content}</p>
             </div>
-            <h1 className="title">{page.title}</h1>
-            <p className="content">{page.content}</p>
-          </div>
-        ))}
-      </HTMLFlipBook>
+          ))}
+        </HTMLFlipBook>
+      )}
     </div>
   );
 }
