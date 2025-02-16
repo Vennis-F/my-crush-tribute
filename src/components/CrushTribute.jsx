@@ -4,7 +4,7 @@ import "./styles.css";
 
 const pages = [
   {
-    title: "9 Điều Dành Cho Chị Đan Tâm",
+    title: "9 Điều Dành Cho Đan Tâm",
     content: "",
     image: "cover.webp",
     sound: "cover.mp3",
@@ -13,63 +13,63 @@ const pages = [
   {
     title: "Có một người...",
     content:
-      "Có một người mà mình luôn ngưỡng mộ, không chỉ vì những gì chị làm được, mà còn vì con người của chị.",
+      "Có một người mà mình luôn ngưỡng mộ, không chỉ vì những gì Đan Tâm làm được, mà còn vì con người của cô ấy.",
     image: "image1.jpg",
     sound: "sound1.mp3",
   },
   {
     title: "Gia đình - Nơi yêu thương bắt đầu",
     content:
-      "Chị luôn xem gia đình là điều quan trọng nhất. Dù có đi xa đến đâu, có bận rộn thế nào, trái tim chị vẫn luôn hướng về gia đình. Họ không chỉ là chốn bình yên, mà còn là động lực lớn nhất của chị.",
+      "Đan Tâm luôn xem gia đình là điều quan trọng nhất. Dù có đi xa đến đâu, có bận rộn thế nào, trái tim cô ấy vẫn luôn hướng về gia đình. Họ không chỉ là chốn bình yên, mà còn là động lực lớn nhất của cô ấy.",
     image: "image3.jpg",
     sound: "sound3.mp3",
   },
   {
-    title: "Người chị mạnh mẽ",
+    title: "Một người mạnh mẽ",
     content:
-      "Có những người mạnh mẽ vì họ muốn thế, nhưng cũng có những người mạnh mẽ vì họ phải thế. Dù là gì, chị vẫn tỏa sáng theo cách riêng của mình.",
+      "Có những người mạnh mẽ vì họ muốn thế, nhưng cũng có những người mạnh mẽ vì họ phải thế. Dù là gì, Đan Tâm vẫn tỏa sáng theo cách riêng của mình.",
     image: "image2.jpg",
     sound: "sound2.mp3",
   },
   {
-    title: "Sự ấm áp của chị",
+    title: "Sự ấm áp của Đan Tâm",
     content:
-      "Một ánh mắt, một nụ cười, một lời động viên từ chị cũng có thể khiến người ta cảm thấy thế giới này dịu dàng hơn.",
+      "Một ánh mắt, một nụ cười, một lời động viên từ Đan Tâm cũng có thể khiến người ta cảm thấy thế giới này dịu dàng hơn.",
     image: "image4.jpg",
     sound: "sound4.mp3",
   },
   {
-    title: "Có bao giờ chị tự hỏi...",
+    title: "Có bao giờ Đan Tâm tự hỏi...",
     content:
-      "Rằng thế giới này may mắn thế nào khi có chị? Những điều chị làm, dù nhỏ bé hay lớn lao, đều để lại dấu ấn trong lòng ai đó.",
+      "Rằng thế giới này may mắn thế nào khi có Đan Tâm? Những điều cô ấy làm, dù nhỏ bé hay lớn lao, đều để lại dấu ấn trong lòng ai đó.",
     image: "image5.jpg",
     sound: "sound5.mp3",
   },
   {
-    title: "Chị cũng cần được yêu thương",
+    title: "Đan Tâm cũng cần được yêu thương",
     content:
-      "Mạnh mẽ không có nghĩa là phải đi một mình. Ai cũng xứng đáng có một chốn dựa vào, kể cả chị.",
+      "Mạnh mẽ không có nghĩa là phải đi một mình. Ai cũng xứng đáng có một chốn dựa vào, kể cả Đan Tâm.",
     image: "image6.jpg",
     sound: "sound6.mp3",
   },
   {
     title: "Một khoảnh khắc yên bình",
     content:
-      "Nếu có một ngày chị thấy mệt, hãy cho phép bản thân dừng lại một chút. Mình mong chị luôn tìm thấy sự bình yên trong tim mình.",
+      "Nếu có một ngày Đan Tâm thấy mệt, hãy cho phép bản thân dừng lại một chút. Mình mong Đan Tâm luôn tìm thấy sự bình yên trong tim mình.",
     image: "image7.jpg",
     sound: "sound7.mp3",
   },
   {
     title: "Cảm ơn vì đã là chính mình",
     content:
-      "Chị không cần thay đổi để trở thành ai khác. Chị như bây giờ đã là một điều tuyệt vời rồi.",
+      "Đan Tâm không cần thay đổi để trở thành ai khác. Đan Tâm như bây giờ đã là một điều tuyệt vời rồi.",
     image: "image8.jpg",
     sound: "sound8.mp3",
   },
   {
-    title: "Trang cuối em chỉ muốn chúc chịi",
+    title: "Trang cuối mình chỉ muốn chúc Đan Tâm",
     content:
-      "Mong năm nay chị Đan Tâm sẽ ngày càng trẻ đẹp, trẻ mãi không già, luôn vui vẻ, hạnh phúc và thành công trong công việc nhé. Chúc chị năm nay thật ý nghĩa và đáng nhớ",
+      "Mong năm nay Đan Tâm sẽ ngày càng trẻ đẹp, trẻ mãi không già, luôn vui vẻ, hạnh phúc và thành công trong công việc nhé. Hãy mãi mãi vừa là người con gái 17 tuổi vừa là 1 người trưởng thành mạnh mẽ kiên định, luôn tiến về phía trước. Fightingg, litte girl",
     image: "image9.jpg",
     sound: "sound9.mp3",
   },
@@ -90,8 +90,8 @@ export default function CrushTribute() {
     <div className="book-container">
       <audio ref={audioRef} src="background-music.mp3" loop />
       <HTMLFlipBook
-        width={500}
-        height={700}
+        width={window.innerWidth < 768 ? 300 : 500}
+        height={window.innerWidth < 768 ? 450 : 700}
         className="react-pageflip"
         onFlip={handleFlip}
       >

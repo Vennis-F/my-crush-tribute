@@ -136,3 +136,34 @@ body {
 * {
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  .book-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 0; /* Loại bỏ margin âm trên mobile */
+  }
+
+  .react-pageflip {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .page {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.2rem; /* Giảm font size để vừa với màn hình */
+  }
+
+  .content {
+    font-size: 0.9rem; /* Điều chỉnh font size */
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
