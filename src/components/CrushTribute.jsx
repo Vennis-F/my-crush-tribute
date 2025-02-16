@@ -134,7 +134,7 @@ export default function CrushTribute() {
       }
     } else {
       setErrorMessage(
-        "Ồ, bạn đã nhập sai mật khẩu rồi! Bạn có thể tự đoán mò hoặc vào link này để chơi trò chơi và nhận mật khẩu: [Link trò chơi]"
+        "Ồ, bạn đã nhập sai mật khẩu rồi! Bạn có thể tự đoán mò hoặc vào link này để chơi trò chơi và nhận mật khẩu: https://react-love-race.vercel.app/"
       );
     }
   };
