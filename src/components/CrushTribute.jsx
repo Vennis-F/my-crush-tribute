@@ -1,5 +1,6 @@
 import HTMLFlipBook from "react-pageflip";
 import { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 import "./styles.css";
 
 const pages = [
@@ -129,6 +130,7 @@ export default function CrushTribute() {
   const handleUnlock = () => {
     if (inputPassword === PASSWORD) {
       setIsUnlocked(true);
+      sendEmail();
       if (audioRef.current) {
         audioRef.current.play(); // Tự động phát nhạc khi mở khóa
       }
@@ -137,6 +139,28 @@ export default function CrushTribute() {
         "Ồ, bạn đã nhập sai mật khẩu rồi! Bạn có thể tự đoán mò hoặc vào link này để chơi trò chơi và nhận mật khẩu: https://react-love-race.vercel.app/"
       );
     }
+  };
+
+  const sendEmail = () => {
+    const templateParams = {
+      message: "UNLOCKED",
+    };
+
+    emailjs
+      .send(
+        "service_ke21ltr", // Service ID từ EmailJS
+        "template_hiqldzn", // Template ID từ EmailJS
+        templateParams,
+        "akh4-rUy0Rhjek-2f" // User ID từ EmailJS
+      )
+      .then(
+        (result) => {
+          // console.log("Email sent successfully:", result.text);
+        },
+        (error) => {
+          console.error("Error sending:", error.text);
+        }
+      );
   };
 
   return (
