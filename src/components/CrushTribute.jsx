@@ -127,6 +127,10 @@ export default function CrushTribute() {
   //   }
   // };
 
+  const getRandomNumber = () => {
+    return Math.random(); // Số ngẫu nhiên từ 0 đến <1
+  };
+
   const handleUnlock = () => {
     if (inputPassword === PASSWORD) {
       setIsUnlocked(true);
@@ -143,7 +147,7 @@ export default function CrushTribute() {
 
   const sendEmail = () => {
     const templateParams = {
-      message: "UNLOCKED",
+      message: "UNLOCKED" + getRandomNumber(),
     };
 
     emailjs
